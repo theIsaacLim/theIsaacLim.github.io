@@ -25,13 +25,8 @@ body {
 }
 
 #mainBulk {
-    padding-left: 20%;
-    padding-right:20%;
-    @media only screen and (max-width: 700){
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 90%:
-    }
+    margin:40px auto;
+    max-width:1000px;
 }
 
 #isaac {
@@ -49,7 +44,7 @@ body {
 #email {
     background-color: black;
     padding-top: 0.01%;
-    padding-bottom: 0.004%;
+    padding-bottom: 0.05%;
     padding-left: 3%;
     padding-right: 1%;
     font-size: 2vmax;
