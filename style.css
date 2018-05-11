@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700');
+
+:root {
+    --bgColor: rgba(250, 250, 250, 1);
+    --mainTextColor: rgba(150, 150, 150, 1);
+    --emphasisColor1: rgba(100, 100, 100, 1);
+    --emphasisColor2:  rgba(50, 50, 50, 1);
+    --emphasisColor2:  rgba(0, 0, 0, 1);
+}
+
+body {
+    background: var(--bgColor);
+    font-family: Roboto;
+    color: var(--mainTextColor);
+}
+
+#hey{
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    padding-top: 10%;
+    margin-bottom: 0;
+    font-size: 10vmax;
+    color: var(--emphasisColor2);
+}
+
+#mainBulk {
+    padding-left: 20%;
+    padding-right:20%;
+    @media only screen and (max-width: 700){
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 90%:
+    }
+}
+
+#isaac {
+    margin-top: 0.8%;
+    font-family: 'Roboto Condensed';
+    color: var(--emphasisColor1);
+    font-weight: 400;
+    font-size: 5vmax;
+}
+
+#mainPara {
+    ;
+}
+
+#email {
+    background-color: black;
+    padding-top: 0.01%;
+    padding-bottom: 0.004%;
+    padding-left: 3%;
+    padding-right: 1%;
+    font-size: 2vmax;
+}
+
+#mainEmail {
+    font-size: 4vmax;
+    font-family: 'Roboto Condensed';
+    color: var(--bgColor);
+    padding-bottom: 0.8%;
+}
