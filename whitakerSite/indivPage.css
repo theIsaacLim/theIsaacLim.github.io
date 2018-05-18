@@ -12,10 +12,11 @@ body{
 }
 
 p {
-    font-size: 1vmax;
+    font-size: 1em;
 }
 
 #mainTitle {
+    font-size: 1.5em;
     color: var(--emphasisText1);
 }
 
@@ -26,7 +27,7 @@ p {
 }
 
 #header {
-    font-size: 3vmax;
+    font-size: 1em;
     text-align: center;
     color: var(--firstColor);
 }
@@ -55,19 +56,13 @@ p {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2vmax;
-     transition: 0.5s;
+    font-size: 2em;
+     transition: 0.3s;
 }
 
 
  #next:hover {
-     transition: 0.3s;
     background-color: var(--primaryBg); /* Green */
-    border: none;
     color: var(--firstColor);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 2vmax;
+     transition: 0.15s;
 }
