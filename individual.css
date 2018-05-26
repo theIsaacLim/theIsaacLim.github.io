@@ -8,6 +8,9 @@
     --emphasisColor1: rgba(100, 100, 100, 1);
     --emphasisColor2:  rgba(50, 50, 50, 1);
     --fancy: lightblue;
+    --topRow: rgba(100, 100, 100, 1);
+    --oddColor: rgba(240, 240, 240, 1);
+    --evenColor: rgba(220, 220, 220, 1);
 }
 
 
@@ -104,4 +107,37 @@ a {
 
 iframe {
     border-style: none;
+}
+
+#first {
+    background-color: var(--topRow);
+    color: var(--reverseEmphasisColor);
+}
+
+td, tr {
+    padding: 1%;
+    border: none;
+}
+
+#odd {
+    background-color: var(--oddColor);
+}
+
+#even {
+    background-color: var(--evenColor);
+}
+
+ul {
+    list-style: none;
+}
+
+li:before {
+    content: " - ";
+    display: block;
+    float: left;
+    padding-right: 0.5%;
+}
+
+ol {
+    color: var(--emphasisColor1);
 }
