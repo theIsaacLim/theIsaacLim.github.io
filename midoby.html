@@ -1,0 +1,50 @@
+<head>
+    <meta charset = 'utf-8'>
+    <link rel="stylesheet" href="style.css">
+    <title>How long has Midoby been a thing?</title>
+    <script>
+        function changeTime(){
+            var currentTime = new Date();
+            var midobiTime = new Date(2018, 5, 11, 20, 30);
+            console.log(midobiTime.getDate(), currentTime.getDate());
+            var timeElement = document.getElementById("time");
+
+            function diffDate( date1, date2 ) {
+                var miliseconds =  (date2.getTime() - date1.getTime());
+                return Math.floor(Math.abs((miliseconds/(60*60*1000))));
+            }
+            
+            timeElement.innerHTML =  String(diffDate(currentTime, midobiTime)) + " hours";
+        }
+        
+        window.onload = changeTime;
+    </script>
+    <style>
+        #mainBulk {
+            text-align: center;
+            margin: 40px auto;
+            font-family: 'Helvetica Neue';
+        }
+
+        #caption {
+            color: rgb(150, 150, 150);
+        }
+
+        #time {
+            font-size: 50;
+            color: black;
+        }
+
+        body {
+            background-color: rgb(250, 250, 250);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="mainBulk">
+        <h1 id="caption">How long has Midoby been a thing?</h1>
+        <h1 id="time">TIME hours</h1>
+    </div>
+</body>
