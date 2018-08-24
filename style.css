@@ -1,184 +1,125 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700');
-
-:root {
-    --bgColor: rgba(250, 250, 250, 1);
-    --reverseEmphasisColor: rgba(200, 200, 200, 1);
-    --mainTextColor: rgba(150, 150, 150, 1);
-    --emphasisColor1: rgba(100, 100, 100, 1);
-    --emphasisColor2:  rgba(50, 50, 50, 1);
-    --fancy: lightblue;
+@import url('https://fonts.googleapis.com/css?family=Muli:800|Lato:300,300i');
+body{
+    padding:0;margin:0;
+    --secondhighlightcolor: rgb(180,230, 220);
+    --firsthighlightcolor: #3F69AA;
+    
+    --headercol: #032D6E;
+    --textcol: rgb(20, 20, 20);
+    --deemphasizetextcol: rgb(100, 100, 100);
+    
+    --mainbgcol: rgb(250, 250, 250);
+    --emphasisbgcol: rgb(250, 250, 250);
+    
+    --error: #ff0033;
+    
+    padding-bottom: 5%;
+    background-color: var(--mainbgcol);
 }
 
+body *{
+    color: var(--textcol);
+}
 
-#navbar {
+body *::selection {
+    background: var(--firsthighlightcolor);
+    color: var(--emphasisbgcol);
+}
+
+body *::-moz-selection {
+    background: var(--firsthighlightcolor);
+    color: var(--emphasisbgcol);
+}
+
+#mainBulk{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin:0 auto;
+    max-width:800px;
+    background: var(--mainbgcol);
     z-index: 100;
-    background-color: var(--bgColor);
-    padding: 1% 1% 1% 1%;
-    height: 3%;
-    position: sticky;
-    top: 0px;
-    font-size: 1em;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-#navbar a {
-    color: var(--emphasisColor1);
-    padding-right: 3%;
-    display: inline;
-    transition: 1s;
+h1, h2, h3, h4{
+    font-family: 'Muli';
+    font-weight: 800;
+    color: var(--headercol);
 }
 
-#navbar a:hover {
-    cursor: pointer;
-    color: var(--fancy);
+h1{
+    font-size: 3em;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 120%;
+    font-family: 'Lato';
+    color: var(--textcol);
+}
+hr{
+    border: 0;
+    width: 80%;
+    height: 1vw;
+    background-color: var(--firsthighlightcolor);
+    margin: 0;
+}
+
+#imageBlock img{
+    height: auto;
+    width: 100%;
+}
+
+#imageBlock{
+    font-style: italic;
+    padding: 2vh 0 2vh 0;
+}
+
+#imageBlock p{
+    color: var(--deemphasizetextcol);
+    margin-left: 2%;
+}
+
+a{
+    color: var(--textcol);
+    text-decoration: none;
+    border-bottom: .5vh solid var(--firsthighlightcolor);
     transition: 0.3s;
 }
 
-body {
-    padding:0; margin: 0;
-    object-fit: cover;
-    background: url(room.JPG) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Ubuntu';
-}
 
-#bg {
-    height: 94%;
-}
-
-#overlay {
-    width: 100%;
-    background: var(--bgColor);
-    font-family: Roboto;
-    color: var(--mainTextColor);
-}
-
-#hey{
-    font-family: 'Roboto Condensed';
-    font-weight: 700;
-    padding-top: 5%;
-    margin-bottom: 0;
-    font-size: 10vmax;
-    color: var(--emphasisColor2);
-}
-
-#mainBulk {
-    margin:0px auto;
-    margin-bottom: 0px;
-    max-width:1000px;
-}
-
-#isaac {
-    margin-top: 0.8%;
-    font-family: 'Roboto Condensed';
-    color: var(--emphasisColor1);
-    font-weight: 400;
-    font-size: 5vmax;
-}
-
-#mainPara {
-    ;
-}
-
-#email {
-    background-color: var(--emphasisColor2);
-    padding-top: 0.01%;
-    padding-bottom: 0.05%;
-    padding-left: 3%;
-    padding-right: 1%;
-    font-size: 2vmax;
-}
-
-#mainEmail {
-    font-size: 4vmax;
-    font-family: 'Roboto Condensed';
-    color: var(--bgColor);
-    padding-bottom: 0.8%;
-}
-
-
-#bottom {
-    text-align: center;
-    width: 99%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
-
-#bottom hr {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-a {
-    text-decoration: none;
-    color: var(--mainTextColor);
-}
-
-
-#contact {
-    padding-left: 1%;
-    padding-top: 2%;
-}
-
-
-#contact a{
-    display: block;
-    padding-bottom: 0.5%;
-    text-decoration: none;
-    font-size: 1.5em;
-    color: var(--emphasisColor1);
-    transition: 0.5s;
-}
-
-#contact a:hover {
+a:hover{
     transition: 0.1s;
-    color: var(--fancy);
+    color: var(--emphasisbgcol);
+    background-color: var(--firsthighlightcolor);
+    border-bottom: .5vh solid var(--firsthighlightcolor);
 }
 
-#testimonial {
-    font-size: 1.5em;
-    display: block;
-    padding-bottom: 0;
-    font-family: 'Ubuntu Condensed';
+#navbar{
+    background-color: var(--firsthighlightcolor);
+    color: var(--mainbgcol);
 }
 
-#testimonial #text {
-    font-size: 1em;
-}
-
-#testimonial #customer {
-    font-size: 0.5em;
+#navbar:hover{
+    color: var(--headercol);
 }
 
 
-
-#images {
-    height: 100%;
-    width: 80%;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-    background: var(--fancy);
+@media only screen and (min-width: 400px){
+    #navbar{
+        padding: 1% 5% 1% 1%;
+        margin:0;
+        position: fixed;
+        top: 0;left:0;
+    }
 }
 
-#images a{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 1s;
-}
-
-
-#images a img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 1s;
-}
-#images a:hover {
-    opacity: 0.3;
+@media only screen and (max-width: 400px){
+    #navbar{
+        padding: 5% 5% 5% 1%;
+        padding-left: 10%;
+        margin:0;
+        position: fixed;
+        top: 0;left:0;
+        width: 94%;
+    }
 }
