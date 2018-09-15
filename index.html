@@ -3,19 +3,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <script src='jquery.min.js'></script> <!--http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js-->
+    <script  src="fadein.js"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Isaac</title>
 </head>
 
 <body>
-    <div id="mainBulk">  
-        <h1 id="hi">Hi! <c id="im">I'm Isaac</c></h1>
-        <p style="font-size:1.2em;">I build things and think things. Here are those things</p>
-        
-        <div id="mini">
-            <h2>Yay it's live!</h2>
-            <p>I just wanted to get rid of that ugly sight that was my ugly site before this makeover. So now I thought about my personal branding, gave the site a makeover, and now it probably looks good. I hope. This site will be the place where I dump all my dumb thoughts and ideas. <br>I promise more stuff will be here soon.</p>
-            <p id="timestamp">24 Aug 2018</p>
+    <div id="header">
+        <div id="transpBar">
+            <a href="./projects.html" id="first">Projects</a>
+            <a href="./about.html" id="second">About</a>
         </div>
-        
+        <img src="./header.jpg">
+    </div>
+    <div id="cover">
+        <div id="mainBulk">  
+            <h1 id="big"><div id="hi">Hi!</div> <div id="im">I'm Isaac </div><div id="wave"></div></h1>
+            <p id="things">I build things and think things. Here are those things</p>
+            <div id="contact">
+                <p><a id="button" target="_blank" href="http://www.twitter.com/theIsaacLim">Twitter</a></p>
+                <p><a id="button" target="_blank" href="http://www.github.com/theIsaacLim">Github</a></p>
+                <p><a id="button" href="mailto:hey@isaaclim.me?subject=hey&body=';">Email</a></p>
+            </div>
+
+            <div id="mini">
+                <h2>Yay it's live!</h2>
+                <p>I just wanted to get rid of that ugly sight that was my ugly site before this makeover. So now I thought about my personal branding, gave the site a makeover, and now it probably looks good. I hope. This site will be the place where I dump all my dumb thoughts and ideas. <br>I promise more stuff will be here soon.</p>
+            </div>
+
+        </div>
+        <div id="footer">
+            <p>Made with ❤️ by Isaac Lim. <a href="github.com"> Use the source, Luke</a></p>
+        </div>
     </div>
 </body>

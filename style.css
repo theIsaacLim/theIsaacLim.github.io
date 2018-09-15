@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:800|Lato:300,300i');
+@import url('https://fonts.googleapis.com/css?family=Muli:800|Lato:300,300i|Amatic+SC:700');
 body{
     padding:0;margin:0;
     --secondhighlightcolor: rgb(180,230, 220);
     --firsthighlightcolor: #3F69AA;
+    --secondhighlightcolor: #B8B8B8;
     
     --headercol: #032D6E;
     --textcol: rgb(20, 20, 20);
-    --deemphasizetextcol: rgb(100, 100, 100);
+    --deemphasizetextcol: rgb(150, 150, 150);
     
     --mainbgcol: rgb(250, 250, 250);
     --emphasisbgcol: rgb(250, 250, 250);
@@ -31,6 +32,11 @@ body *::-moz-selection {
     color: var(--emphasisbgcol);
 }
 
+.article{
+    padding-top: 5%;
+}
+
+
 #mainBulk{
     padding-left: 2%;
     padding-right: 2%;
@@ -47,7 +53,7 @@ h1, h2, h3, h4{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 4em;
 }
 
 p{
@@ -67,6 +73,7 @@ hr{
 #imageBlock img{
     height: auto;
     width: 100%;
+    border-radius: 2%;
 }
 
 #imageBlock{
@@ -97,6 +104,7 @@ a:hover{
 #navbar{
     background-color: var(--firsthighlightcolor);
     color: var(--mainbgcol);
+    border-radius: 0 0 2vh 0;
 }
 
 #navbar:hover{
@@ -121,5 +129,16 @@ a:hover{
         position: fixed;
         top: 0;left:0;
         width: 94%;
+    }
+    
+    h1{
+    font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    h1{
+    font-size: 3em;
     }
 }

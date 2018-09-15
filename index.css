@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
 #mainBulk{
     max-width:800px;
+    overflow-x: hidden;
+}
+
+#cover {
+    background: var(--mainbgcol);
+    border-radius: 2vh 2vh 0% 0%;
+    box-shadow: 0px -50px 20px rgba(0,0,0,0.5);
 }
 
 #post{
+    border-radius: 2vh;
     background: var(--emphasisbgcol);
     padding: 1%;
     margin-bottom: 5%;
@@ -11,19 +21,61 @@
     margin-left: 0;margin-right: 0;
 }
 
-@media only screen and (min-width: 800px){
+#transpBar{
+    font-family: 'Lato';
+    display: flex;
+    width: 80%;
+    position: absolute;
+    top:0;left:0;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    z-index: 10000;
+}
+
+#transpBar a{
+    font-size: 2em;
+    font-weight: 300;
+    background: transparent;
+    color: white;
+    border: .2vh solid var(--emphasisbgcol);
+    padding: 1%;
+    padding-right: 50px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    opacity: .8;
+}
+
+#first{
+    border-radius: 10% 0% 0% 10%;
+    border-right: .1vh
+}
+
+#second{
+    border-radius: 0% 10% 10% 0%;
+    border-left: .1vh
+}
+
+#transpBar a:hover{
+    opacity: 1;
+    background: var(--firsthighlightcolor);
+}
+
+
+@media (min-width: 810px){
     #post img{
         float: left;
         width: 100%;
         height: auto;
-        width: 20vw;
-        height: 20vw;
+        width: 30vw;
+        height: 30vw;
         object-fit: cover;
         margin-right: 5vh;
+        border-radius: 2%;
     }
 }
 
-@media only screen and (max-width: 800px){
+@media (max-width: 810px){
     #post img{
         align-self: center;
         margin-left: auto;
@@ -32,6 +84,10 @@
         width: 100%;
         height: 50vw;
         object-fit: cover;
+        border-radius: 2%;
+    }
+    #post a{
+        margin: 0 auto;
     }
 }
 
@@ -61,9 +117,148 @@
 }
 
 #hi{
+    display: inline;
+    padding: 0;margin:0;
 }
 
 #im{
-    font-size: .5em;
+    font-size: .8em;
     color: var(--firsthighlightcolor);
+    display: inline;
+    padding: 0;margin:0;
+}
+
+#header img{
+    padding:0;margin:0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 30% 0%;
+}
+
+#header{
+    position: fixed; top:0; left:0;
+    z-index: -10;
+}
+
+#cover{
+    margin-top: 80vh;
+    padding-top: 1vh;
+    z-index: 10;
+    margin-bottom: 0;
+}
+
+#post, #justImage, #mini{
+    animation: slidein;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(20);
+}
+
+@keyframes slidein{
+    from{
+        opacity: .5;
+        margin-left: 50%;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+h2{
+    font-size: 3em;
+    line-height: 100%;
+    padding: 0; margin: 0;
+}
+
+p{
+    font-size: 1.2em;
+    margin-bottom: 5vh;
+}
+
+#post a{
+    border-radius: 1vh;
+    font-size: 1.5em;
+    font-family: 'Amatic SC';
+    padding: 1% 4% 1% 4%;
+    margin: 0 auto;
+    border: .2vh solid var(--firsthighlightcolor);
+    color: var(--firsthighlightcolor);
+}
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#button{
+    border-radius: 1vh;
+    font-size: 1.5em;
+    font-family: 'Amatic SC';
+    padding: 1vh 3vw 1vh 3vw;
+    margin: 0 auto;
+    border: .2vh solid var(--firsthighlightcolor);
+    color: var(--emphasisbgcol);
+    background: var(--firsthighlightcolor);
+}
+
+#button:hover{
+    border-radius: 1vh;
+    transition: 0.3s;
+    background: transparent;
+    border: .2vh solid var(--firsthighlightcolor);
+    color: var(--firsthighlightcolor);
+}
+
+#post a:hover{
+    border-radius: 1vh;
+    transition: 0.3s;
+    color: var(--emphasisbgcol);
+}
+
+#things{
+    font-size:2em;
+}
+
+#footer{
+    border-top: solid 2px var(--secondhighlightcolor);
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    max-width: 500px;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+#footer a{
+    color: var(--deemphasizetextcol);
+    border-bottom: solid .3vh var(--firsthighlightcolor);
+}
+
+#footer a:hover{
+    color: var(--emphasisbgcol);
+}
+
+#footer p{
+    font-size: 0.8em;
+    color: var(--secondhighlightcolor);
+}
+
+#wave{
+    display: inline;
+}
+
+#wave::after{
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    content: '✋'
+}
+
+@keyframes wave{
+    50%{
+        content: '👋';
+    }
 }
