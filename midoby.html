@@ -19,23 +19,53 @@
         window.onload = changeTime;
     </script>
     <style>
-        #mainBulk {
-            text-align: center;
-            margin: 40px auto;
-            font-family: 'Helvetica Neue';
-        }
+        @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,900');
 
         #caption {
-            color: rgb(150, 150, 150);
-        }
-
-        #time {
-            font-size: 50;
+            font-family: 'Muli';
+            font-weight: 400;
             color: black;
+            writing-mode: vertical-rl;
+            position: fixed;
+            top:0;left:0;
+            background: white;
+            height: 100vh;
+            width: 10vw;
+            font-size: 2em;
+            margin:0;padding: 1vw;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
         }
-
+        #time {
+            font-family: 'Muli';
+            font-weight: 900;
+            font-size: 80vw;
+            line-height: 80%;
+            color: black;
+            word-wrap: break-word;
+            width: 4em; overflow: hidden;
+            margin:0;padding:0;
+            margin-left: 10vw;
+            height: 100vh;
+            vertical-align: center;
+            display:flex;align-items:center;
+        }
         body {
             background-color: rgb(250, 250, 250);
+            overflow-y: hidden;
+            padding:0;margin:0;
+        }
+
+        @media only screen and (min-width: 900px){
+            #caption{
+                font-size: 3em;
+            }
+        }
+
+        #hours{
+            font-family: 'Muli';
+            font-weight: 700;
+            font-style: italic;
+            font-size: 0.5em;
         }
     </style>
 </head>
@@ -44,6 +74,6 @@
 <body>
     <div id="mainBulk">
         <h1 id="caption">How long has Midoby been a thing?</h1>
-        <h1 id="time">TIME hours</h1>
+        <h1 id="time">3302 <span id="hours">hours</span></h1>
     </div>
 </body>
