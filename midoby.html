@@ -6,7 +6,7 @@
             var currentTime = new Date();
             var midobiTime = new Date(2018, 5, 11, 20, 30);
             console.log(midobiTime.getDate(), currentTime.getDate());
-            var timeElement = document.getElementById("time");
+            var timeElement = document.getElementById("num");
 
             function diffDate( date1, date2 ) {
                 var miliseconds =  (date2.getTime() - date1.getTime());
@@ -74,6 +74,6 @@
 <body>
     <div id="mainBulk">
         <h1 id="caption">How long has Midoby been a thing?</h1>
-        <h1 id="time">TIME <span id="hours">hours</span></h1>
+        <h1 id="time"><span id="num">TIME</span> <span id="hours">hours</span></h1>
     </div>
 </body>
