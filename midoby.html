@@ -7,20 +7,18 @@
             var midobiTime = new Date(2018, 5, 11, 20, 30);
             console.log(midobiTime.getDate(), currentTime.getDate());
             var timeElement = document.getElementById("num");
-
             function diffDate( date1, date2 ) {
                 var miliseconds =  (date2.getTime() - date1.getTime());
                 return Math.floor(Math.abs((miliseconds/(60*60*1000))));
             }
             
-            timeElement.innerHTML =  String(diffDate(currentTime, midobiTime)) + " hours";
+            timeElement.innerHTML =  String(diffDate(currentTime, midobiTime));
         }
         
         window.onload = changeTime;
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,900');
-
         #caption {
             font-family: 'Muli';
             font-weight: 400;
@@ -54,13 +52,11 @@
             overflow-y: hidden;
             padding:0;margin:0;
         }
-
         @media only screen and (min-width: 900px){
             #caption{
                 font-size: 3em;
             }
         }
-
         #hours{
             font-family: 'Muli';
             font-weight: 700;
