@@ -1,75 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
 <head>
-    <meta charset = 'utf-8'>
-    <title>How long has Midoby been a thing?</title>
-    <script>
-        function changeTime(){
-            var currentTime = new Date();
-            var midobiTime = new Date(2018, 5, 11, 20, 30);
-            console.log(midobiTime.getDate(), currentTime.getDate());
-            var timeElement = document.getElementById("num");
-            function diffDate( date1, date2 ) {
-                var miliseconds =  (date2.getTime() - date1.getTime());
-                return Math.floor(Math.abs((miliseconds/(60*60*1000))));
-            }
-            
-            timeElement.innerHTML =  String(diffDate(currentTime, midobiTime));
-        }
-        
-        window.onload = changeTime;
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,900');
-        #caption {
-            font-family: 'Muli';
-            font-weight: 400;
-            color: black;
-            writing-mode: vertical-rl;
-            position: fixed;
-            top:0;left:0;
-            background: white;
-            height: 100vh;
-            width: 10vw;
-            font-size: 2em;
-            margin:0;padding: 1vw;
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-        }
-        #time {
-            font-family: 'Muli';
-            font-weight: 900;
-            font-size: 80vw;
-            line-height: 80%;
-            color: black;
-            word-wrap: break-word;
-            width: 4em; overflow: hidden;
-            margin:0;padding:0;
-            margin-left: 10vw;
-            height: 100vh;
-            vertical-align: center;
-            display:flex;align-items:center;
-        }
-        body {
-            background-color: rgb(250, 250, 250);
-            overflow-y: hidden;
-            padding:0;margin:0;
-        }
-        @media only screen and (min-width: 900px){
-            #caption{
-                font-size: 3em;
-            }
-        }
-        #hours{
-            font-family: 'Muli';
-            font-weight: 700;
-            font-style: italic;
-            font-size: 0.5em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Happy Midoby Day!</title>
+  
+  
+  
+      <link rel="stylesheet" href="./midoby.css">
+
+  
 </head>
 
-
 <body>
-    <div id="mainBulk">
-        <h1 id="caption">How long has Midoby been a thing?</h1>
-        <h1 id="time"><span id="num">TIME</span> <span id="hours">hours</span></h1>
-    </div>
+
+  <h1>HAPPY MIDOBY DAY!</h1>
+<div class="fireworks">
+	<div class="firework">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework" style="margin-top: -70px">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework" style="margin-top: 70px">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework" style="margin-top: -70px">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+	<div class="firework">
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark red"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+		<div class="explosion"><div class="spark blue"></div></div>
+		<div class="explosion"><div class="spark green"></div></div>
+		<div class="explosion"><div class="spark yellow"></div></div>
+	</div>
+</div>
+  
+  
+
 </body>
+
+</html>
