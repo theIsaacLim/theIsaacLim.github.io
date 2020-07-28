@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Isaac Lim</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-07-28T16:35:16+08:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>The Problems of Tomorrow's Malaysia are Created in the Classrooms of Today.</title>
+   <link href="http://localhost:4000/2020/07/09/problems"/>
+   <updated>2020-07-09T00:00:00+08:00</updated>
+   <id>http://localhost:4000/2020/07/09/problems</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;./monzo-pot.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;This article is exclusively on this blog&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The accelerating burgeoning of the human population over the past century has brought with it many examples of human accomplishment and achievement, but has also resulted in brutal competition in both the workforce and the education system. Suicide rates, anxiety rates, and depression rates in youth have been steadily growing over the past decade, and a large part of this can be attributed to the competition created for teenagers still developing their emotional maturity.&lt;/p&gt;
+
+&lt;p&gt;The education system should help children in not only their academic development but also their mental and emotional growth. Schools should prepare kids for being productive members of society, which means not only academic attainment but also providing an environment in which children can mature emotionally.&lt;/p&gt;
+
+&lt;p&gt;As a student in a prestigious international school, I have seen time and time again attachment to grades crippling countless talented, potent children. What happens to these bright kids is that because of praise lauded onto them by adults, they begin to attach themselves to their grades emotionally as a source of personal pride. This attachment is incredibly unhealthy for the bulk of maturing teenagers. One symptom of this problem is that inevitably, when their grades drop, their pride is chipped away at, something devastatingly so.&lt;/p&gt;
+
+&lt;p&gt;Grades once served a purpose, being quick and easy ways to describe academic performance. Although grades aren’t new, our fixation on them is. In today’s cutthroat environment, they are harmful to the mental health of our future workforce. Because of the sheer number of students today, schools are forced to quickly assess their ability, and it is this combination of intense competition and overvaluation of grades that is permanently damaging to our children’s mental health.&lt;/p&gt;
+
+&lt;p&gt;Whenever I talk about the problems in our current education system, I get almost universal agreement from teachers, students, parents and citizens. Despite this, there’s a general lack of action taken against these societal problems.&lt;/p&gt;
+
+&lt;p&gt;We need to look hard at our education system and see what’s working and what’s not- shifting focus from letter grades to individual, case-by-case student improvement is an important first step.&lt;/p&gt;
+
+&lt;p&gt;The problems of tomorrow’s Malaysia are created in the classrooms of today.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How Parasite uses production design and pizza boxes to plunge people into it's wacky world</title>
+   <link href="http://localhost:4000/2020/04/11/parasite"/>
+   <updated>2020-04-11T00:00:00+08:00</updated>
+   <id>http://localhost:4000/2020/04/11/parasite</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This article was originally published in the UNIT-E magazine.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./park.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The South Korean film Parasite, directed by Bong Joon-ho, made waves around the
+world when it won four awards at the 92nd Academy Awards, being the first
+non-English language film to take home the prestigious Best Picture award. The
+film depicts the poor Kim family infiltrating the richer Park family, and has
+resonated with audiences around the world largely because of its ability to
+immerse audience members in this fictional world.&lt;/p&gt;
+
+&lt;p&gt;According to several interviews with the production designer for this piece,
+Bong had from the very start a clear vision of the architecture of both houses
+featured in the film, and was highly involved with the design of these houses,
+through 3D modelling. When Kevin, the son of the Kim family, first enters the
+Park house, he moves up multiple flights of stairs, while his own home is a
+semi-basement, deep in the ground- the space itself is a metaphor for status.&lt;/p&gt;
+
+&lt;p&gt;Watching the film, you might not notice any CGI - but there are computer
+generated elements everywhere. The top half of the Park house, the Kim’s street,
+shots in the rain were all computer-generated. This new trend, known as
+&lt;strong&gt;invisible effects&lt;/strong&gt; is ****where VFX is used to extend sets, build crowds,
+improve background, and swap out clothing. This allows for more flexibility to
+stick to the director’s vision in post-production, after the film is shot.&lt;/p&gt;
+
+&lt;p&gt;A tried and true cornerstone of writing advice is writing what you know.
+Parasite is a shining example of this. Bong worked as a tutor for a wealthy
+family in Seoul, and used this experience as a starting point for his writing of
+Parasite. Bong fleshes out the lore of his world through little details such as
+pizza box folding records, Taiwanese castella stores, and jjapguri, a type of
+ramen, topped with steak, which may not seem like much, but combined, make the
+world feel so much more believable.&lt;/p&gt;
+
+&lt;p&gt;What this means for writers, actors, filmmakers, or any young creative
+storytellers is that immersing your audience in your world is incredibly
+important to make it feel real, and this can be done through setting,
+technology, details and drawing from your own past experiences.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
